@@ -1,5 +1,18 @@
+const readline = require('readline');
 const fetch = require("node-fetch");
 const _ = require("lodash");
+
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+rl.question('Masukkan token: ', (inputToken) => {
+  rl.question('Masukkan userId: ', (inputUserId) => {
+    main(inputToken, inputUserId);
+    rl.close();
+  });
+});
 
 const listFollowing = async (token, id, startAt = "") => {
   try {
@@ -47,9 +60,7 @@ const follow = async (token, id) => {
   }
 };
 
-const main = async () => {
-  const token = "";
-  const userId = "";
+const main = async (token, userId) => {
   const delay = (ms) => new Promise((res) => setTimeout(res, ms));
   console.log(`Grabbing following...`);
 
@@ -74,15 +85,11 @@ const main = async () => {
         const doFollow = await follow(token, user.id);
         if (doFollow.followStatus) {
           console.log(
-            `[${i++}] [${user.id}] ${user.displayName} (@${
-              user.username
-            }) | Status : ${doFollow.followStatus}`
+            `[${i++}] [${user.id}] ${user.displayName} (@${user.username}) | Status : ${doFollow.followStatus}`
           );
         } else {
           console.log(
-            `[${i++}] [${user.id}] ${user.displayName} (@${
-              user.username
-            }) | Status : ${JSON.stringify(doFollow)}`
+            `[${i++}] [${user.id}] ${user.displayName} (@${user.username}) | Status : ${JSON.stringify(doFollow)}`
           );
         }
       })
@@ -90,5 +97,3 @@ const main = async () => {
     await delay(1500);
   } while (lastKey !== "");
 };
-
-main();
