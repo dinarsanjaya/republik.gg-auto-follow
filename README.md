@@ -2,7 +2,7 @@
  
 
 
-### Installation / Setup
+### Setup
 ```
 - Install node js (https://nodejs.org/en/download)
 - git clone https://github.com/dinarsanjaya/republik.gg-auto-follow
