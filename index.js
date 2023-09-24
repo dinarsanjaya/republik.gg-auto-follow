@@ -55,10 +55,20 @@ const follow = async (token, id) => {
 };
 
 const main = async () => {
-  const token = ""; // Gantilah dengan token Anda
+  const token = "eyJraWQiOiI5bWc0WGsrajl6OXRxVXFWb3ZSUUR5d1lLdkZcL0ZWaHVXaTUrRXI1WDFuVT0iLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJkZDM3YzFhZS1kNmIxLTQ1YjEtYTJkNy00M2QzZDJkNmEwMDkiLCJlbWFpbF92ZXJpZmllZCI6dHJ1ZSwiaXNzIjoiaHR0cHM6XC9cL2NvZ25pdG8taWRwLmFwLXNvdXRoZWFzdC0xLmFtYXpvbmF3cy5jb21cL2FwLXNvdXRoZWFzdC0xX2FjRTlUNHVCayIsImNvZ25pdG86dXNlcm5hbWUiOiJhOWU2OTg0My1hZDhlLTQ3MmEtYjZkZC1mYTA1NzUzNDhhYWEiLCJvcmlnaW5fanRpIjoiMjYzOTVmYjYtNmM3Zi00ZDA1LWE1NTYtMjJjMzVmNmJhNDk0IiwiYXVkIjoiM3U0ZGc1NzMyc3FyZ2dlbnUxNWI5NGpyYmkiLCJldmVudF9pZCI6IjMyNDFlYTQ5LWEwYjMtNGViYS04NWJiLTJjYTJlNDE4MTZlMiIsInRva2VuX3VzZSI6ImlkIiwiYXV0aF90aW1lIjoxNjk1NTQzNzI1LCJleHAiOjE2OTU1NDczMjUsImlhdCI6MTY5NTU0MzcyNSwianRpIjoiNDVhYWMzMTAtZThkYS00NmUyLWI4ZmUtZDhkODE5MGY5NDExIiwiZW1haWwiOiJpbmF5c2FuamF5YUBnbWFpbC5jb20ifQ.BNu21-f9KLhFcffSfrmKumyvsdKiF1rI6h0giah00cHuegZ023JLSmnRfPS8VRbVRnfSxosmB2AyQ-N1u0l-pv8d_mUdjfneeyUqsvSjX7-3gKldX1lrLsqSmVsmj_kVBVU1uSb6cBtzm6L0077o-Tzly_CAW0M6wMUqpKzYLUHTXvv4_w_gwV3P4qRXV8RUp-YhCY-qDdrKPu08UUtOehxTsZRPjZUKdHsAWF8F6HbYCuh5YFgFRXkClR-ndMFf3Xfy_A6rZr3nthtI-tekTeUuXD5B5FuUUSxmNwA4lVfJrbHLCJJKd2zyDe-jEItrGC_bwiuMYKwHUivSpZUEGQ"; // Gantilah dengan token Anda
   const userId = ""; // Gantilah dengan ID pengguna Anda
-  console.log(`salam solmerrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr`);
+  const asciiArt = `
+  +====================================================+
+  |███████╗ ██████╗ ██╗     ███╗   ███╗███████╗██████╗ |
+  |██╔════╝██╔═══██╗██║     ████╗ ████║██╔════╝██╔══██╗|
+  |███████╗██║   ██║██║     ██╔████╔██║█████╗  ██████╔╝|
+  |╚════██║██║   ██║██║     ██║╚██╔╝██║██╔══╝  ██╔══██╗|
+  |███████║╚██████╔╝███████╗██║ ╚═╝ ██║███████╗██║  ██║|
+  |╚══════╝ ╚═════╝ ╚══════╝╚═╝     ╚═╝╚══════╝╚═╝  ╚═╝|
+  +====================================================+   
+`;
 
+console.log(asciiArt);
   let i = 0;
   const filePath = "text.txt"; 
 
