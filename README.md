@@ -19,6 +19,7 @@
 - pkg install micro
 - git clone https://github.com/dinarsanjaya/republik.gg-auto-follow
 - cd republik.gg-auto-follow
+- npm install
 - edit index.js = micro index.js (cara save file nya crtl+q terus ketik y lanjut enter)
 - node index.js
 ```
